@@ -1,11 +1,12 @@
-import {hot} from 'react-hot-loader/root'
-import * as React from 'react'
+import { hot } from 'react-hot-loader/root'
+import React from 'react'
+import styles from "./header.module.scss"
 
-function HeaderComponent () {
-  return(
+function HeaderComponent() {
+  return (
     <header>
-      <h1>
-        Reddit for our ownasdasd
+      <h1 className={styles.example}>
+        Reddit for our ow
       </h1>
     </header>
   )
