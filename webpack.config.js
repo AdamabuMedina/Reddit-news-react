@@ -9,7 +9,7 @@ module.exports = {
     extensions: [".js", ".jsx", ".ts", ".tsx", ".json"]
   },
   mode: NODE_ENV ? NODE_ENV : "development",
-  entry: path.resolve(__dirname, "src/index.jsx"),
+  entry: path.resolve(__dirname, "src/index.js"),
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "index.js"
@@ -21,13 +21,12 @@ module.exports = {
   },
   module: {
     rules: [{
-      test: /\.[tj]sx?$/,
+      test: /\.[tj]s[x]?$/,
       use: ["ts-loader"]
     }]
   },
   plugins: [new HtmlWebpackPlugin({
     title: 'Reddit-news-react',
-    filename: 'index.html',
-    template: path.resolve(__dirname, "index.html")
+    template: path.resolve(__dirname, "./public/index.html")
   })]
 }
