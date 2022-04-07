@@ -1,1 +1,3 @@
-# Reddit-news-react
+# Учебный курс React от SkillBox
+
+# Испульзуется webpack
